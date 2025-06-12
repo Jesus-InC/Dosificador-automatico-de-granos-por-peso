@@ -1,1 +1,4 @@
-.
+# Proyecto: Dosificador Automático por Peso
+
+Este proyecto implementa un sistema dosificador automático que utiliza una celda de carga junto al módulo HX711 para medir el peso del material dispensado, un servo motor que controla la apertura para el paso del producto, una pantalla LCD con interfaz I2C para mostrar la información del proceso en tiempo real, y botones físicos para ajustar el peso deseado y controlar el sistema. El archivo `calibrador.ino` se usa para obtener el factor de calibración del sensor antes del uso real, mientras que el segundo código contiene la lógica principal del dispensador: incluye la lectura constante del peso, la configuración del umbral, la activación del servo cuando se inicia el proceso, y la detención automática al alcanzar el peso configurado. Además, se incorpora la comunicación por puerto serial para recibir comandos como `START`, `TARE` y `SET`, y se utilizan señales sonoras con buzzer para indicar el inicio y final del servido, facilitando así la interacción con el usuario.
+
